@@ -19,7 +19,7 @@ var urlencodedParser = bodyParser.urlencoded({extended: false}); //to parse the 
 
 module.exports = function(app){
 
-app.get('/todo', function(req, res){
+app.get('/', function(req, res){
 	Todo.find({}, function(err, data){
 		if (err) throw err;
 		res.render('todo', {todos: data});
