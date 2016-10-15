@@ -1,0 +1,18 @@
+
+li{ 
+    font-size: 20px;
+}
+
+li:hover{
+    text-decoration: line-through !important;
+    cursor: pointer;
+    background: #d9534f !important;
+    color: #fff;
+}
+button{
+    width:100%;
+        -webkit-border-radius: 0 0 50px 50px !important;
+            -moz-border-radius: 0 0 50px 50px !important;
+                -o-border-radius: 0 0 50px 50px !important;
+                    border-radius: 0 0 50px 50px !important;
+}

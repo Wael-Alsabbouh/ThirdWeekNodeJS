@@ -1,0 +1,34 @@
+<html>
+ <head>
+ 	<title>Todo App</title>
+ 	<script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+ 	
+ 	<link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+
+ 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ 	<script src="/assets/todo-list.js"></script>
+ </head>
+ <body>
+ 	
+ 		
+ 	<fieldset>
+ 	<legend>my Express.js Todo list</legend>
+ 	<div id="todo-table" class="container">
+ 		<form>
+ 		
+ 			<input type="text" name="item" placeholder="add new task..." required  class="form-control input-md"/>
+ 			<button type="submit" class="btn btn-info">Add Task</button>
+ 	
+ 		</form>
+ 		
+ 		<h5>Delete by clicking on the task!</h5>
+ 		<ul class="list-group">
+ 			<% for(var i=0; i<todos.length; i++){ %>
+ 				<li class="list-group-item"><%= todos[i].item %></li>
+ 			<% } %>
+ 		</ul>
+ 	</div>
+ 	</fieldset>
+ </body>
+</html>
